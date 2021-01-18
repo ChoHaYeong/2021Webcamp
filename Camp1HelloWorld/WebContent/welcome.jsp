@@ -8,8 +8,17 @@
 </head>
 <body>
 
-<%! int data=50; %>  
-<%= "Value of the variable is:"+data %> 
+<%  
+String name=request.getParameter("uname");  
+out.print("welcome "+name);  
+%>  
+
+<%= "Welcome "+request.getParameter("uname") %>  
+
+<%   
+response.sendRedirect("http://www.google.com");  
+%> 
+
 
 </body>
 </html>

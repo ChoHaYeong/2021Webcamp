@@ -8,8 +8,12 @@
 </head>
 <body>
 
-<%! int data=50; %>  
-<%= "Value of the variable is:"+data %> 
+<%   
+  
+String name=(String)session.getAttribute("user");  
+out.print("Hello "+name);  
+  
+%>  
 
 </body>
 </html>
