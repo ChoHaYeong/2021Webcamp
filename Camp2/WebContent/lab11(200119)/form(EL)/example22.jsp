@@ -21,6 +21,6 @@
         //웹 애플리케이션 단위로 정보를 유지하고자 할 때 ServletContext객체에 등록합니다.
         //application.setAttribute("member", member); 
     %>
-    <jsp:forward page="memberOutput.jsp" />
+    <jsp:forward page="formEL_ok.jsp" />
 </body>
 </html>

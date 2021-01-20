@@ -24,7 +24,7 @@ String introduce = request.getParameter("introduce");
 <p>패스워드 : <%= passwd %></p>
 <p>이메일 : <%= email %></p>
 <p>이메일 수신여부 : <%= emailAgree %></p>
-<p>관심사항: <%= interest %></p>
+<p>관심사항: </p>
 
 <%
 	for(String val: interest){
