@@ -14,7 +14,7 @@ String userId = request.getParameter("userId");
 String passwd = request.getParameter("passwd"); 
 String email = request.getParameter("email"); 
 String emailAgree = request.getParameter("emailAgree"); 
-String[] interest = request.getParameterValues("interest"); 
+String interest = request.getParameter("interest"); 
 String hp_1 = request.getParameter("hp_1"); 
 String hp_2 = request.getParameter("hp_2"); 
 String introduce = request.getParameter("introduce"); 
@@ -24,14 +24,9 @@ String introduce = request.getParameter("introduce");
 <p>패스워드 : <%= passwd %></p>
 <p>이메일 : <%= email %></p>
 <p>이메일 수신여부 : <%= emailAgree %></p>
-<p>관심사항: </p>
+<p>관심사항: <%= interest %></p>
 
-<%
-	for(String val: interest){
-		out.print(val+ " ");
-	}
 
-%><br>
 
 
 <p>핸드폰 : <%= hp_1 + " - " + hp_2 %></p> 
